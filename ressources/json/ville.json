@@ -1,0 +1,18 @@
+[
+  {
+    "Ville": "Strasbourg",
+    "CodePostal": "67000",
+    "Station": "Agip, Total"
+  },
+  {
+    "Ville": "Schiltigheim",
+    "CodePostal": "67300",
+    "Station": "Esso, Leclerc station"
+  },
+  {
+    "Ville": "Illkirch graffenstaden",
+    "CodePostal": "67400",
+    "Station": "Auchan station, AS 24"
+  }
+
+]

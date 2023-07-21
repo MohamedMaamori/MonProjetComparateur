@@ -1,0 +1,57 @@
+/*html, body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+#d-sm-flex{
+  background-color: gainsboro;
+  padding-bottom: 2.5rem; 
+}*/
+
+
+/*#d-flex {
+    display: flex!important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+section{
+    margin-top: 10%;
+    margin-left: 15%;
+    padding:  1%;
+    border: dimgray 1px solid;
+    text-align: center;
+    width: 40%;
+}
+input[type="submit"]{
+    background-color: black;
+    color: white;
+    padding: 1%;
+    width: 30%;
+}
+#retour{
+    margin-top: -0.5%;
+    text-align: left;
+}
+#lienRetour{
+    text-decoration: none;
+    color: dimgray;
+}*/
+#form{
+
+    width: 350px;
+
+    height: auto;
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    -webkit-transform: translate(-50%, -50%);
+
+}
+

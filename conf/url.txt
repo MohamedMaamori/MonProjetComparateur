@@ -1,0 +1,11 @@
+protocole://domaine:port/chemin/ressource_web
+
+http://localhost:80/MonProjetComparateur/index.php
+http://localhost:80/MonProjetComparateur/views/Accueil.php
+c:/xampp/htdocs/MonProjetComparateur/views/Accueil.php
+
+http://mohamedmaamori.alwaysdata.net:80/MonProjetComparateur/views/Accueil.php
+/www/MonProjetComparateur/views/Accueil.php
+
+
+ftp://ftp-mohamedmaamori.alwaysdata.net:21/www/MonProjetComparateur/views/Accueil.php
