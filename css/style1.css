@@ -1,0 +1,157 @@
+.search-container {
+    background-color: rgb(246, 245, 245);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+
+.search-container label {
+    font-size: 18px;
+}
+
+
+
+.search-container input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: none;
+
+}
+
+
+
+.search-container button {
+    background-color: #060d15;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.results-container {
+    width: 80%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+
+
+th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.brand-cell{
+    font-weight: bold;
+}
+
+.price-cell{
+    color: rgba(20, 40, 225, 0.8);
+    font-weight: bold;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.image-container {
+    flex: 1;
+    padding: 20px;
+}
+
+
+
+.survey-container {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(44, 50, 83, 0.8);
+}
+
+
+
+/* Adjust the image size */
+.image {
+    max-width: 100%;
+    height: 600px;
+    border-radius: 8px;
+}
+/* Réinitialisation des marges et du remplissage */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+
+/* Définir une hauteur minimale pour la div principale */
+.main-content {
+    min-height: 100vh;
+    padding-bottom: 60px; /* Hauteur du footer */
+    box-sizing: border-box; /* Assurez-vous que le remplissage ne dépasse pas la hauteur minimale */
+}
+
+
+
+/* Styles pour le footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Ajustez la hauteur selon vos besoins */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+}
+.auth-form {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.btn {
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+
+

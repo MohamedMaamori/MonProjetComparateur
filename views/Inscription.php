@@ -7,7 +7,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
   </script>
   <script src="../js/Inscription.js"></script>
-  <!-- <link rel="stylesheet" href="../css/style.css" />-->
+  <link rel="stylesheet" href="../css/style1.css" />
 </head>
 <body>
   <header>
@@ -41,6 +41,7 @@
         </div>
       </div>
     </nav>
+
     <?php
     //include './partials/header.php';
     ?>
@@ -55,6 +56,7 @@
   //$affected = 0;
   //echo "";
   ?>
+  <div class="main-content">
   <?php
   if (isset($message)) {
     echo $message;
@@ -71,7 +73,7 @@
           </div>
         </div>
         <div class="row">
-          <form action="../controllers/InscriptionCTRL.php" method="post" id="formInscription">
+          <form action="../controllers/InscriptionCTRL.php" method="post" id="formInscription" >
             <form action="" method="post">
             <fieldset>
               <legend>
@@ -152,10 +154,40 @@
 
     </main>
   </section>
+  </div>
+  <footer class="bg-dark text-center text-white">
 
-  <footer class="mt-auto" style="color: #f1f1f1;">
-    <div class="footer-copyright text-center px-3 py-3" style="background-color: black;">
-      &#169;2023 Copyright : All right reserved
+    <div class="container p-4 pb-0">
+
+      <section class="">
+        <form action="">
+
+          <div class="row d-flex justify-content-center">
+
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Inscrivez-vous à notre newsletter</strong>
+              </p>
+            </div>
+            <div class="col-md-5 col-12">
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example29" class="form-control" />
+                <label class="form-label" for="form5Example29">Addresse e-mail</label>
+              </div>
+            </div>
+            <div class="col-auto">
+
+              <button type="submit" class="btn btn-primary mb-4">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright : All right reserved
+      <a class="text-white" href="">  Compario</a>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous">

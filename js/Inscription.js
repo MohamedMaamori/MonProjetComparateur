@@ -20,16 +20,7 @@ function initInscription() {
         valider()
     }
     )
-    //document.getElementById("btValidez").addEventListener("click", (event)=>{
-            //event.preventDefault()
-          //  valider()
-        //}
-    //)
-} /// init
-/**
- *
- * @returns {undefined}
- */
+}
 function valider() {
     console.table("valider")
     // Déclaration d'une variable et affectation d'une valeur
@@ -68,10 +59,5 @@ function afficherMasquer(){
         Checkbox=true
     }
 }
-/**
-
- * MAIN
-
- */
 // Au chargement de la page et de la lecture du fichier js on sollicite la fonction init
 window.onload = initInscription

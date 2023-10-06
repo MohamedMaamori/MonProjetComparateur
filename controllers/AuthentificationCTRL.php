@@ -47,3 +47,7 @@ if ($pseudoCook != null && $mdpCook != null) {
 echo json_encode($tMessage);
 //include '../views/Authentification.php';
 ?>
+
+
+
+

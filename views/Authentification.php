@@ -14,7 +14,7 @@ http://localhost/MonProjetPerso/views/Authentification.php
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
   </script>
-  <!--<link rel="stylesheet" href="../css/style.css" />-->
+  <link rel="stylesheet" href="../css/style1.css" />
   <script src="../js/Authentification.js"></script>
 
 </head>
@@ -56,7 +56,7 @@ http://localhost/MonProjetPerso/views/Authentification.php
 
   </nav>
   <body>
-
+ <div class="main-content">
   <?php
   if (!isSet($mail)) {
     $mail = "";
@@ -77,7 +77,7 @@ http://localhost/MonProjetPerso/views/Authentification.php
       </div>
     </div>
     <div class="row">
-      <form method="post" action="../controllers/AuthentificationCTRL.php" id="formLogin">
+      <form method="post" action="../controllers/AuthentificationCTRL.php" id="formLogin" class="auth-form">
         <fieldset>
           <div class="mb-2 row">
             <label for="pseudo"  class="col-sm-3 col-form-label"></label>
@@ -142,6 +142,7 @@ http://localhost/MonProjetPerso/views/Authentification.php
               switch (code) {
                 case 0:
                   message = "OK, vous êtes connectés";
+                  window.location.href = "Promotion.php";
                   break;
                 case 1:
                   message = "KO, vous n'êtes pas connectés";
@@ -168,6 +169,8 @@ http://localhost/MonProjetPerso/views/Authentification.php
     let pseudo = document.getElementById("pseudo").value;
     let mdp = document.getElementById("mdp").value;
     getData(pseudo, mdp);
+
+
   });
 </script>
 
@@ -182,64 +185,46 @@ http://localhost/MonProjetPerso/views/Authentification.php
   </section>
   <hr>
 
-  <!--<footer class="mt-auto" style="color: #f1f1f1;">
-    <div class="footer-copyright text-center px-3 py-3" style="background-color: black;">
-      &#169;2023 Copyright : All right reserved
-    </div>
-    </div>
+
     <?php
     // include '../partials/footer.php';
     ?>
+ </div>
 
-  </footer>-->
   <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
+
     <div class="container p-4 pb-0">
-      <!-- Section: Form -->
+
       <section class="">
         <form action="">
-          <!--Grid row-->
+
           <div class="row d-flex justify-content-center">
-            <!--Grid column-->
+
             <div class="col-auto">
               <p class="pt-2">
                 <strong>Inscrivez-vous à notre newsletter</strong>
               </p>
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
             <div class="col-md-5 col-12">
-              <!-- Email input -->
               <div class="form-outline form-white mb-4">
                 <input type="email" id="form5Example29" class="form-control" />
                 <label class="form-label" for="form5Example29">Addresse e-mail</label>
               </div>
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
             <div class="col-auto">
-              <!-- Submit button -->
+
               <button type="submit" class="btn btn-primary mb-4">
                 Subscribe
               </button>
             </div>
-            <!--Grid column-->
           </div>
-          <!--Grid row-->
         </form>
       </section>
-      <!-- Section: Form -->
     </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2023 Copyright : All right reserved
       <a class="text-white" href="">  Compario</a>
     </div>
-    <!-- Copyright -->
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
